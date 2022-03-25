@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>P O K E D E X</h1>
+    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+    <button onclick="fetchPokemon()">Cambiar Imágen</button>
+    <section id="PokeData">
+        <div>
+            <img src="./img/stockPokeball.png" alt="Pokemon" id="pokeImg" width="150px">
+        </div>
+        <div>
+            <span id="pokeNombre">Nombre del pokemon</span>
+        </div>
+        <div>
+            <h3>Tipo: </h3><span id="pokeTipo"></span>
+        </div>
+        <div>
+            <h3>Estadísticas</h3>
+            <table id="pokeEstadisticas" border = 1>
+                <tr><th>Estadistica</th><th>Valor</th></tr>
+           </table>
+        </div>
+        <div>
+            <h3>Movimientos</h3>
+            <div ></div>
+            <table id="pokeMovimientos" border = 1>
+                <tr><th>Movimiento</th><th>Metodo de aprendizaje</th></tr>
+            </table>
+        </div>
+    </section>
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
