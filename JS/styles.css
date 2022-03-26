@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+h1{
+    width: 100%;
+    background-color: #CC0000;
+    padding: 2rem;
+    text-align: center;
+}
+.pokeSearch{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    background-color: #CC0000;
+}
+.pokeSearch input {
+    background-color: #0075BE;
+    color: black;
+    height: 2rem;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+} 
+.pokeSearch input:focus {
+    background-color: #0064a1;
+    outline: none;
+}
+.pokeSearch button {
+    border-radius: 0 5px 5px 0;
+    width: 2rem;
+}
+#PokeData{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #EFFCD5
+}
+.Pdata {
+    background-color: white;
+    width: 75%;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+h3 {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+}
+table{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border-collapse: collapse;
+    border-radius: 1rem;
+}
+th {
+    padding: 1rem;
+    background-color: rgb(87, 87, 87);
+}
+th:nth-child(odd) {
+    border-radius: 1rem 0 0 0;
+}
+th:nth-child(even) {
+    border-radius: 0 1rem 0 0;
+}
+td {
+    padding: 1rem;
+}
+td:nth-child(even) {
+    text-align: center;
+}
+footer {
+    background-color: #CC0000;
+    padding: 2rem;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: 150ms ease-in-out;
+}
+footer a:hover {
+    color: #0064a1;
+}

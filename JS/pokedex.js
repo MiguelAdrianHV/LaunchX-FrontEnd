@@ -32,12 +32,13 @@ const setPokeData = (data) => {
         pokeType.innerHTML = data.types[0].type.name
     }
 
-    genera_tabla(data.stats, `pokeEstadisticas`);
-    genera_tabla(data.moves, `pokeMovimientos`);
+    genera_tabla(data.stats,'<tr><th>Stat</th><th>Value</th></tr>', `pokeEstadisticas`);
+    genera_tabla(data.moves,'<tr><th>Move</th><th>Learning method</th></tr>', `pokeMovimientos`);
 }
-function genera_tabla(itemList, pokeId) {
+function genera_tabla(itemList,headers, pokeId) {
 
     items_table = document.getElementById(`${pokeId}`);
+    items_table.innerHTML = headers;
     if (pokeId === `pokeEstadisticas`) {
         for (var ctr = 0; ctr < itemList.length; ctr++) {
             items_table.innerHTML += '<tr><td>' + itemList[ctr].stat.name + '</td><td>' + itemList[ctr].base_stat + '</td></tr>';

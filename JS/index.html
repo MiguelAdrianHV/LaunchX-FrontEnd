@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/04ee56720a.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +10,31 @@
 </head>
 <body>
     <h1>P O K E D E X</h1>
-    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
-    <button onclick="fetchPokemon()">Cambiar Imágen</button>
+    <div class="pokeSearch">
+        <input type="text" placeholder='"Pikachu" or "25"' id="pokeName" name="pokeName">
+        <button id="btnSearch" onclick="fetchPokemon()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
     <section id="PokeData">
-        <div>
+        <div class="Pimg">
             <img src="./img/stockPokeball.png" alt="Pokemon" id="pokeImg" width="150px">
         </div>
-        <div>
-            <span id="pokeNombre">Nombre del pokemon</span>
+        <div class="Pnombre">
+            <span id="pokeNombre"></span>
         </div>
-        <div>
-            <h3>Tipo: </h3><span id="pokeTipo"></span>
-        </div>
-        <div>
-            <h3>Estadísticas</h3>
-            <table id="pokeEstadisticas" border = 1>
-                <tr><th>Estadistica</th><th>Valor</th></tr>
+        <div class="Pdata">
+            <h3>Type </h3><span id="pokeTipo"></span>
+            <h3>Stats</h3>
+            <table id="pokeEstadisticas" class="pokeTable">   
+           </table>
+           <h3>Moves</h3>
+           <div ></div>
+           <table id="pokeMovimientos" class="pokeTable">
            </table>
         </div>
-        <div>
-            <h3>Movimientos</h3>
-            <div ></div>
-            <table id="pokeMovimientos" border = 1>
-                <tr><th>Movimiento</th><th>Metodo de aprendizaje</th></tr>
-            </table>
-        </div>
     </section>
+    <footer>
+        <a href="https://github.com/MiguelAdrianHV"><i class="fa-brands fa-github-square"></i> </a>
+    </footer>
 </body>
 <footer>
     <script src="./pokedex.js"></script>
